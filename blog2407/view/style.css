@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* 共通事項 */
+body{
+    background-color: #E0DBD3;
+    color: #231F20;
+    /* Grid */
+    display: center;
+    grid-template: 
+    "header header" 256px
+    "mv mv" auto
+    "main side" auto
+    "footer footer" auto
+    /3fr 1fr;   
+}
+
+
+h2{
+    color: #707070;
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+form {
+    width: 300px;            /* フォームの幅を指定 */
+    padding: 10px 0px;           /* フォームにパディングを追加 */
+    background-color: #E0DBD3; /* 背景色を設定 */
+    margin: auto;
+    width: fit-content;
+
+}
+
+input {
+    margin: 10px 0; /* 各input間に余白を追加 */
+    padding: 10px;   /* inputの内側にスペースを追加 */
+    width: 100%;     /* inputの幅をフォーム内で広げる */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h3{
+    text-align: center;
+}
+
+main{
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse; /* 枠線が重ならないようにする */
+    margin: auto; /* テーブルを中央に配置 */
+    border: 1px solid #000; /* テーブルの枠線 */
+    width: 60%; /* テーブルの幅 */
+}
+
+/* ヘッダー全体のスタイル */
+header {
+    background-color: #0fbdb1ba;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
